@@ -4,6 +4,7 @@ import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
 import { useEffect, useRef, useState } from "react";
 import { WHITELIST_CONTRACT_ADDRESS, abi } from "../constants";
+import Link from "next/link";
 
 export default function Home() {
   // walletConnected keep track of whether the user's wallet is connected or not
@@ -151,7 +152,14 @@ export default function Home() {
       if (joinedWhitelist) {
         return (
           <div className={styles.description}>
-            Thanks for joining the Whitelist!
+            Thanks for joining the Whitelist! <br /><br />
+            
+            <a>
+            <Link href="https://dex-delta.vercel.app/">
+              <button className={styles.button}>NEXT</button>
+            </Link>
+            </a>
+            
           </div>
         );
       } else if (loading) {
