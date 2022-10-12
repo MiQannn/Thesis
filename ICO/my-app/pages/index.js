@@ -9,6 +9,7 @@ import {
   TOKEN_CONTRACT_ADDRESS,
 } from "../constants";
 import styles from "../styles/Home.module.css";
+import Link from "next/Link";
 
 export default function Home() {
   // Create a BigNumber `0`
@@ -364,6 +365,11 @@ export default function Home() {
         >
           Mint Tokens
         </button>
+        <a>
+          <Link href="https://dex-miqannn.vercel.app/">
+            <button className={styles.button2}>Next</button>
+          </Link>
+        </a>
       </div>
     );
   };
@@ -371,22 +377,21 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Crypto Devs</title>
+        <title>IUC Mint</title>
         <meta name="description" content="ICO-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs ICO!</h1>
+          <h1 className={styles.title}>Welcome to IUC!</h1>
           <div className={styles.description}>
-            You can claim or mint Crypto Dev tokens here
+            You can claim or mint IUC here
           </div>
           {walletConnected ? (
             <div>
               <div className={styles.description}>
                 {/* Format Ether helps us in converting a BigNumber to string */}
-                You have minted {utils.formatEther(balanceOfCryptoDevTokens)} Crypto
-                Dev Tokens
+                You have minted {utils.formatEther(balanceOfCryptoDevTokens)} IUC
               </div>
               <div className={styles.description}>
                 {/* Format Ether helps us in converting a BigNumber to string */}
@@ -401,12 +406,12 @@ export default function Home() {
           )}
         </div>
         <div>
-          <img className={styles.image} src="./0.svg" />
+          <img className={styles.image} src="./IU.png" />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        @ A decentralized Exchanges (DEX) Platform with a Automated Market Maker (AMM) model
       </footer>
     </div>
   );
