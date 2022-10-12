@@ -155,7 +155,7 @@ export default function Home() {
             Thanks for joining the Whitelist! <br /><br />
             
             <a>
-            <Link href="https://dex-delta.vercel.app/">
+            <Link href="https://ico-taupe-omega.vercel.app/">
               <button className={styles.button}>NEXT</button>
             </Link>
             </a>
@@ -200,15 +200,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Whitelist Dapp</title>
+        <title>IUC Whitelist</title>
         <meta name="description" content="Whitelist-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Welcome to IUC!</h1>
           <div className={styles.description}>
-            Its an NFT collection for developers in Crypto.
+            This is a token collection for students in IU.
           </div>
           <div className={styles.description}>
             {numberOfWhitelisted} have already joined the Whitelist
@@ -216,12 +216,12 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./crypto-devs.svg" />
+          <img className={styles.image} src="./IU.png" />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+       @ A decentralized Exchanges (DEX) Platform with a Automated Market Maker (AMM) model
       </footer>
     </div>
   );
