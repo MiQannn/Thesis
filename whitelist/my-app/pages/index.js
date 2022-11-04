@@ -155,7 +155,7 @@ export default function Home() {
             Thanks for joining the Whitelist! <br /><br />
             
             <a>
-            <Link href="https://ico-taupe-omega.vercel.app/">
+            <Link href="https://ico-6gzv.vercel.app/">
               <button className={styles.button}>NEXT</button>
             </Link>
             </a>
@@ -221,7 +221,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-       @ A decentralized Exchanges (DEX) Platform with a Automated Market Maker (AMM) model
+       @ A Decentralized Exchanges (DEX) Platform with a Automated Market Maker (AMM) model
       </footer>
     </div>
   );
